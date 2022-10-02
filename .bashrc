@@ -50,4 +50,6 @@ alias ping='prettyping'
 # alias for your/my convenience
 alias cat='bat'
 alias pasteTB="nc termbin.com 9999"
+source /usr/share/bash-completion/completions/git
 alias dotfiles="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+__git_complete dotfiles __git_main

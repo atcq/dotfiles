@@ -74,7 +74,6 @@ set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'atcq-rose'
     gsettings set $gnome-schema icon-theme 'BeautyLine'
-    gsettings set $gnome-schema icon-theme 'atcq-rose'
     gsettings set $gnome-schema cursor-theme 'Vimix-cursors'
     gsettings set $gnome-schema font-name 'Source Code Pro'
 }
@@ -365,6 +364,7 @@ bindsym $mod+g mode "ﯯ"
 # borders and style
 default_border pixel 1
 gaps outer 5
+gaps top 0
 gaps inner 10
 
 
