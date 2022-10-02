@@ -1,0 +1,95 @@
+{
+    "margin-top": 0,
+    "margin-right": 10,
+    "margin-left": 10,
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["idle_inhibitor","battery","backlight","pulseaudio", "clock", "network","cpu","memory","temperature"],
+    "modules-right": ["sway/mode","sway/language","tray"],
+    "sway/workspaces": {
+        "format": "{icon}",
+	"persistent_workspaces": {
+	    "1mix": ["eDP-1"],
+	    "2chat": ["eDP-1"],
+	    "3work": ["eDP-1"],
+	    "4media": ["eDP-1"],
+	    "5music": ["eDP-1"],
+	    "6chrome": ["HDMI-A-1"],
+	    "7_mix": ["HDMI-A-1"],
+	    "8edit": ["HDMI-A-1"],
+	    "9misc": ["HDMI-A-1"]
+	},
+	"format-icons": {
+	    "1mix": "",
+	    "2chat": "",
+	    "3work": "歷",
+	    "4media": "",
+	    "5music": "",
+	    "6chrome": "",
+	    "7_mix": "",
+	    "8edit": "",
+	    "9misc": "恵"
+	}
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+	"format-icons": {
+	    "activated": "ﯦ",
+	    "deactivated": "ﯧ"
+	},
+	"tooltip": false
+    },
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25,
+        "tooltip": false
+    },
+    "backlight": {
+        "device": "amdgpu_bl1",
+        "format": " {percent}",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "墳 {volume}",
+        "format-bluetooth": " {volume}",
+        "format-muted": "婢",
+        "tooltip": false
+    },
+    "clock": {
+        "format": " {:%H:%M}",
+        "timezone": "Europe/Berlin",
+        "tooltip": false
+    },
+    "network": {
+        "format": " {signalStrength}",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": " {usage}",
+        "tooltip": false
+    },
+    "memory": {
+        "format": " {}",
+        "tooltip": false
+    },
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon7/temp1_input",
+        "format": "﨏 {temperatureC}°C",
+        "interval": 2,
+        "tooltip": false
+    },
+    "sway/mode": {
+        "format": ":{}",
+	"tooltip": false
+    },
+    "sway/language": {
+        "format": " {short}",
+	"on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+	"tooltip": false
+    }
+}

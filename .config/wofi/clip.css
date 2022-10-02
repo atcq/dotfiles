@@ -1,0 +1,65 @@
+window {
+    background:
+        linear-gradient(#282a36, #282a36) padding-box,
+	linear-gradient(to left, #FFBCD1, #282a36) border-box;
+    border-radius: 0 15px 15px 0;
+    border-width: 1px 1px 1px 0px;
+    border-color: transparent;
+    border-style: solid;
+    font-family: "SourceCodePro, Iosevka";
+}
+
+#input {
+    margin: 5px;
+    padding: 5px 15px 5px 15px;
+    color: #FFBCD1;
+    background:
+        linear-gradient(#282a36, #282a36) padding-box,
+	linear-gradient(to top, #FFBCD1, #8767AC) border-box;
+    border-radius: 15px;
+    border: 1px solid transparent;
+}
+
+#inner-box {
+    border: none;
+    background-color: #282a36;
+    border-radius: 15px;
+}
+
+#outer-box {
+    margin: 5px 15px 5px 15px;
+    border: none;
+    background-color: #282a36;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #FFBCD1;
+} 
+
+#entry {
+    margin: 0 5px 0 5px;
+    padding: 0 5px 0 5px;
+    border: 1px solid transparent;
+}
+
+#entry:selected {
+    background:
+        linear-gradient(#3e4153, #3e4153) padding-box,
+	linear-gradient(to bottom, #FFBCD1, #8767AC) border-box;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+#entry:selected * {
+    background-color: #3e4153;
+    border-radius: 15px;
+    outline: none;
+}
